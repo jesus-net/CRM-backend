@@ -14,7 +14,7 @@ async function bootstrap() {
         allowedHeaders: 'Origin,X-Requested-With,Content-Type,Accept,Authorization,authorization,X-Forwarded-for',
     });
     app.useGlobalPipes(new common_1.ValidationPipe());
-    await app.listen(8800);
+    await app.listen(process.env.PORT);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
